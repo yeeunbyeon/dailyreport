@@ -1,30 +1,35 @@
 <!doctype html>
 <html>
-<head><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-53L6WQTWVY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-53L6WQTWVY');
-</script>
+<head>
   <meta charset="utf-8">
   <title> Daily Activity Report</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  #unfinishedtasks{
+    border-top: 1px, solid, grey;
+  }
+  </style>
 </head>
 
 <body>
   <H1><a href="index.html">Daily Activity Report</a></H1>
-  <ol>
-    <li><a href="1.html">Timeline</a></li>
-    <li><a href="2.html">Ongoing Tasks</a></li>
-    <li><a href="3.html">Tasks for Tomorrow</a></li>
-  </ol>
-
-  <H2>Ongoing Tasks</H2>
-  <ul>
-    <li><input type="checkbox">코딩 배우기</li>
-    <li><input type="checkbox">중국어 Day2 문제 풀기</li>
-    <li><input type="checkbox">중국어 Day2 단어 정리 및 암기</li>
-  </ul>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">Timeline</a></li><br>
+      <li><a href="2.html">Task List</a></li><br>
+      <li><a href="3.html">Archive</a></li>
+    </ol>
+    <div id="content">
+      <pre><H2>Task List</H2>
+        <br><label><input type="checkbox" checked> <s>HTML 배우기</s> </label>
+        <br><label><input type="checkbox" checked> <s>CSS 배우기</s> </label>
+        <br><label><input type="checkbox" checked> <s>피아노 연습하기</s> </label>
+        <br><label><input type="checkbox" checked> HSK Day 1 단어 복습 </label>
+      <br><br>
+        <H2 id="unfinishedtasks">Unfinished Tasks</H2>
+        <br><label><input type="checkbox"> HSK Day 2 학습 </label>
+        <br><label><input type="checkbox"> HSK Day 2 단어 정리 </label>
+      </pre>
+    </div>
+  </div>
 </body>
