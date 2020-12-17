@@ -2,21 +2,64 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title> Daily Activity Report</title>
+  <title> Daily Activity Report - Timeline</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+  .row {
+    display: flex;
+  }
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  </style>
 </head>
 
 <body>
   <H1><a href="index.html">Daily Activity Report</a></H1>
-  <ol>
-    <li><a href="1.html">Timeline</a></li>
-    <li><a href="2.html">Ongoing Tasks</a></li>
-    <li><a href="3.html">Tasks for Tomorrow</a></li>
-  </ol>
-
-  <H2>Timeline</H2>
-  <p>9:00 기상
-  <br>9:00~9:30 침대에서 뒹구르르ㅡㄹ
-  <br>9:30~9:40 <a href="https://namu.wiki/w/카페%20아메리카노" target="_blank" title="카페 아메리카노">뉴욕</a> 다녀옴
-  <br><img src="coffee.png" width="50%">
-  <br>9:40~? 어제 잠들기 전에 라디오처럼 틀어놓은 유튜브에서 추천해 준 코딩 채널 구경하다가 html 공부하기 시작</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">Timeline</a></li><br>
+      <li><a href="2.html">Task List</a></li><br>
+      <li><a href="3.html">Archive</a></li>
+    </ol>
+    <div id="content">
+      <pre><H2>Timeline</H2>
+      <p><div class="timestamp">9:00 기상</div>
+        <br><br><div class="timestamp">9:00~9:30 침대에서 뒹구르르ㅡㄹ</div>
+        <br><br><div class="timestamp">9:30~9:40 <a href="https://namu.wiki/w/카페%20아메리카노" target="_blank" title="카페 아메리카노" style="color:grey"><u>뉴욕</u></a> 다녀옴</div>
+        <p style="font-size:10px">    <s>사실 커피 사진 아침에 안 찍어뒀는데 저녁에 거의 다 마셨을 때 돼서야 '아 사진 찍을걸!' 싶어서 조금 남은 거 보이게 컵 기울여서 간신히 찍은 아메리카노ㅋㅋ</s></p>
+        <div class="row">
+          <div class="column">
+            <img src="찐뉴요커.jpeg" width="70%"><figcaption>                   ^ 찐뉴요커</figcaption>
+          </div>
+          <div class="column">
+            <img src="조선뉴요커.jpeg" width="70%"><figcaption>                 ^조선뉴요커</figcaption>
+          </div>
+        </div>
+        <br><div class="timestamp">9:41~1:26 html 공부</div>
+        <br><p style="font-size:15px">    어제 잠들기 전에 라디오처럼 틀어놓은 유튜브에서 생활코딩 채널 어쩌궁저쩌궁 하던거 일어나서 마저 보다가 정신 차려보니 이 분 첫 강좌 다 들어버려서 이거 만들기 시작</p>
+        <br><br><div class="timestamp">1:27~2:23 점심</div>
+        <br><br><div class="timestamp">2:24~3:44 피아노</div>
+        <p style="font-size:15px">    월요일에 몇년만에 피아노 쳐봤더니 악보 읽는 법조차 까먹어버린 스스로에게 충격 받고 악보 하나 다운 받아서 감 살리려고 애쓰는중
+        <br>        무슨 곡 치고 있게?</p>
+        <br><div class="timestamp">3:45~4:00 뽀송이랑 뒤구르를</div>
+        <div class="row">
+          <div class="column">
+            <img src="뽀송이.jpeg" width="40%"><figcaption>          .｡.:*･゜(´＾｀)゜･*:.｡. 철푸덕</figcaption>
+          </div>
+        </div>
+        <br><br><div class="timestamp">4:00~7:00 css 공부</div>
+        <p style="font-size:15px">    기왕 만들기 시작한 거 조금 더 꾸며보고 싶어서 다음 강좌도 다 들어버렸</p>
+        <br><br><div class="timestamp">7:00~8:17 저녁, 뒹구르르, 샤워</div>
+        <br><br><div class="timestamp">8:18~11:00 css 공부</div>
+        <p style="font-size:15px">    기왕 css까지 들은 거 조금 더 찾아보면서 꾸미는데 역시 그래봤자 조잡해... 조잡해 조잡해  Ƹ• ͟ʖ•Ʒ
+        <br>        <s>아 눈아파 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</s> 
+        <br><br><div class="timestamp">11:01~11:20 간식뇸</div>
+        <p style="font-size:15px">     와 눈 아파서 잠깐 쉬다가 계란 먹었는데 완전 맛있게 된 반숙 계란이었어 네넴띤 소스에 찍먹 존맛  ˘◡˘ </p>
+        <br><br><div class="timestamp">11:21~11:55 HSK Day 1 단어 복습</div>
+      </p></pre>
+    </div>
+  </div>
 </body>
