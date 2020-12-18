@@ -1,0 +1,69 @@
+
+
+H1{
+  text-align:center;
+  padding:30px;
+  border-bottom:2px solid grey;
+  font-size:50px;
+  margin: 0;
+  font-family: 'Staatliches', cursive;
+}
+a{
+  text-decoration:none;
+  font-color:grey;
+}
+.menu{
+  display:grid;
+  grid-template-columns:  auto auto auto;
+  padding:0;
+  margin-left:10%;
+  margin-right:10%;
+}
+.menu > a{
+  padding:20px;
+  font-size:25px;
+  font-family:'Baloo 2',cursive;
+  text-align:center;
+  border: 1px solid grey;
+  border-top:0;
+}
+.content{
+  margin-left:10%;
+  margin-right:10%;
+  border-left:1px solid grey;
+  border-right:1px solid grey;
+  padding:5%;
+}
+h2{
+  font-size:40px;
+  margin:0;
+}
+* {
+  box-sizing: border-box;
+  font-family:'Gaegu',cursive;
+  font-size:20px;
+}
+.timestamp{
+  font-size:23px;
+  font-weight:bold;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .menu{
+    grid-template-columns:auto;
+  }
+  h1{
+    font-size:65px;
+  }
+  h2{
+    font-size:55px;
+  }
+
+  *{
+    font-size:25px;
+  }
+  .timestamp{
+    font-size:35px;
+  }
+}
